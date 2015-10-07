@@ -1,3 +1,6 @@
+
+@import Foundation;
+
 #import "libssh2.h"
 #import "libssh2_sftp.h"
 
@@ -12,3 +15,6 @@
 #import "NMSFTPFile.h"
 
 #import "NMSSHLogger.h"
+
+#import "NMSSHHostConfig.h"
+#import "NMSSHConfig.h"

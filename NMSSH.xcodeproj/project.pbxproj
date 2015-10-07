@@ -11,7 +11,6 @@
 		18B4FE8E188CB2BB004E05FF /* libssh2.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B4FE89188CB2BB004E05FF /* libssh2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18B4FE8F188CB2BB004E05FF /* libssh2_publickey.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B4FE8A188CB2BB004E05FF /* libssh2_publickey.h */; };
 		18B4FE90188CB2BB004E05FF /* libssh2_sftp.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B4FE8B188CB2BB004E05FF /* libssh2_sftp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		18B4FE91188CB2BB004E05FF /* libssh2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B4FE8D188CB2BB004E05FF /* libssh2.a */; };
 		18E4D2391815F6F600432102 /* NMSSHLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4D2381815F6F600432102 /* NMSSHLogger.m */; };
 		18E4D23A1815F70D00432102 /* NMSSHLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E4F1CBB217206D730025EBFC /* NMSSHLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A04ECAE174F51E8006DD8E7 /* NMSSHChannelDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 18F9DABF17302F7F004CECAA /* NMSSHChannelDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,7 +34,6 @@
 		E48DA7BD15D0EB2800721060 /* NMSFTP.h in Headers */ = {isa = PBXBuildFile; fileRef = E48DA7BB15D0EB2800721060 /* NMSFTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E48DA7BE15D0EB2800721060 /* NMSFTP.m in Sources */ = {isa = PBXBuildFile; fileRef = E48DA7BC15D0EB2800721060 /* NMSFTP.m */; };
 		E48DA7BF15D0EB2800721060 /* NMSFTP.m in Sources */ = {isa = PBXBuildFile; fileRef = E48DA7BC15D0EB2800721060 /* NMSFTP.m */; };
-		E4D99A9D15DE149D00EB5615 /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D99A9C15DE149D00EB5615 /* libssl.dylib */; };
 		E4D99AA215DE15A600EB5615 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D99AA115DE15A600EB5615 /* libcrypto.dylib */; };
 		E4D99AA415DE15B300EB5615 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D99AA315DE15B300EB5615 /* libz.dylib */; };
 		E4E96D88158E10FD002E6E0A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E96D87158E10FD002E6E0A /* Cocoa.framework */; };
@@ -92,6 +90,7 @@
 		6EB9E8031887F52C003A9BE4 /* NMSFTPFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMSFTPFile.h; sourceTree = "<group>"; };
 		6EB9E8041887F52C003A9BE4 /* NMSFTPFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMSFTPFile.m; sourceTree = "<group>"; };
 		6EE908A4188D597300997E11 /* NMSFTPFileTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMSFTPFileTests.m; sourceTree = "<group>"; };
+		7B4F77A41BC47975004D71D3 /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; lineEnding = 0; name = "Mac-Framework.xcconfig"; path = "../../xcconfigs/Mac/Mac-Framework.xcconfig"; sourceTree = "<group>"; };
 		A6AE1EB9191C7B5800780C19 /* NMSSHConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMSSHConfig.h; sourceTree = "<group>"; };
 		A6AE1EBA191C7B5800780C19 /* NMSSHConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMSSHConfig.m; sourceTree = "<group>"; };
 		A6AE1EBD191C835900780C19 /* NMSSHConfigTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMSSHConfigTests.m; sourceTree = "<group>"; };
@@ -140,8 +139,6 @@
 				E4E96D88158E10FD002E6E0A /* Cocoa.framework in Frameworks */,
 				E4D99AA415DE15B300EB5615 /* libz.dylib in Frameworks */,
 				E4D99AA215DE15A600EB5615 /* libcrypto.dylib in Frameworks */,
-				18B4FE91188CB2BB004E05FF /* libssh2.a in Frameworks */,
-				E4D99A9D15DE149D00EB5615 /* libssl.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +203,7 @@
 		E4E96D78158E10FD002E6E0A = {
 			isa = PBXGroup;
 			children = (
+				7B4F77A41BC47975004D71D3 /* Mac-Framework.xcconfig */,
 				E4E96D8D158E10FD002E6E0A /* NMSSH */,
 				E4E96DA3158E10FD002E6E0A /* NMSSHTests */,
 				E4E96D86158E10FD002E6E0A /* Frameworks */,
@@ -406,7 +404,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastTestingUpgradeCheck = 0510;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = E4E96D7D158E10FD002E6E0A /* Build configuration list for PBXProject "NMSSH" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -512,11 +510,15 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -546,11 +548,14 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -565,6 +570,7 @@
 		};
 		E4E96DAF158E10FD002E6E0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B4F77A41BC47975004D71D3 /* Mac-Framework.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -572,14 +578,16 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NMSSH/NMSSH-Prefix.pch";
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = "NMSSH/NMSSH-Info.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 					"$(SRCROOT)/NMSSH-OSX/Libraries/lib",
 				);
+				OTHER_LDFLAGS = "-lssh2";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.ninemuses.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -587,6 +595,7 @@
 		};
 		E4E96DB0158E10FD002E6E0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B4F77A41BC47975004D71D3 /* Mac-Framework.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -594,14 +603,16 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NMSSH/NMSSH-Prefix.pch";
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = "NMSSH/NMSSH-Info.plist";
-				INSTALL_PATH = "@executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 					"$(SRCROOT)/NMSSH-OSX/Libraries/lib",
 				);
+				OTHER_LDFLAGS = "-lssh2";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.ninemuses.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -623,6 +634,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/NMSSH/libssh2\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "se.ninemuses.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -643,6 +655,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/NMSSH/libssh2\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "se.ninemuses.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
